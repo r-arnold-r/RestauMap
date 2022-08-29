@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "15726360687",
+    "firebase_url": "https://restaumap.firebaseio.com",
+    "project_id": "restaumap",
+    "storage_bucket": "restaumap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15726360687:android:d248e2f0a28d75082cb59a",
+        "android_client_info": {
+          "package_name": "com.example.RestauMap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15726360687-7m3d95np3l74h94eb7mi9n0at423atcu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.RestauMap",
+            "certificate_hash": "3358a1689e73c9734dd7bc770208104d80c54cc3"
+          }
+        },
+        {
+          "client_id": "15726360687-vag4bje3g454t99im1vuv9ljbufg0rep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRWIFgO7UvhLKgT9CDiRQau6aih6SVVd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15726360687-vag4bje3g454t99im1vuv9ljbufg0rep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

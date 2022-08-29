@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#23A7D8</color>
+    <color name="colorPrimaryDark">#23A7D8</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="gradStart">#19AA8B</color>
+    <color name="gradStop">#23A7D8</color>
+
+    <color name="btnSignup">#39796b</color>
+    <color name="btnSIgnActive">#A9d440</color>
+
+    <color name="overlayBackground">#7f333639</color>
+    <color name="overlayActionBar">#0e0d0e</color>
+
+    <color name="address">#2F7092</color>
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#67EFC8</color>
+    <color name="followersBg">#65DCE5</color>
+    <color name="followingBg">#49BEFF</color>
+    <color name="grey">#E5E5E5</color>
+    <color name ="dimgrey">#696969</color>
+
+</resources>

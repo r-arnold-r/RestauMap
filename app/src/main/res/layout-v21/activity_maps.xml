@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#800000"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/Theme.AppCompat.Light">
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:id = "@+id/search_box_l_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/grey">
+
+            <AutoCompleteTextView
+                android:id="@+id/search_box_map"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/et_bg"
+                android:fontFamily="sans-serif-light"
+                android:hint="Search for restaurant..."
+                android:inputType="textAutoComplete|textAutoCorrect"
+                android:paddingLeft="15dp"
+                android:textSize="15sp"></AutoCompleteTextView>
+
+            <Button
+                android:id="@+id/search_box_button_map"
+                android:background="@drawable/btn_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Search"
+                android:clickable="true"
+                >
+            </Button>
+
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id = "@+id/go_to_l_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@color/grey">
+
+        <Button
+            android:id="@+id/go_to_follow_map"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:fontFamily="sans-serif-light"
+            android:text="Follow me"
+            android:clickable="true"
+            android:visibility="gone">
+        </Button>
+            <Button
+            android:id="@+id/go_to_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:fontFamily="sans-serif-light"
+            android:text="Make route"
+            android:clickable="true">
+            </Button>
+
+    </LinearLayout>
+
+
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Activities.MapsActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- Draw your view whatever you want to draw -->
+                <FrameLayout
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </fragment>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
